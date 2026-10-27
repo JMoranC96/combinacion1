@@ -8,25 +8,67 @@
     </head>
     <body bgcolor="#F0F0F0">
       <!-- Tabla principal -->
-      <table border="4" bordercolor="#000000" cellspacing="0" cellpadding="10" align="center" bgcolor="#FFFFFF" width="85%">
+      <table border="4" bordercolor="#000000" cellspacing="1" cellpadding="10" align="center" bgcolor="#FFFFFF" width="85%">
           <caption><b>Tabla 1: Combinando celdas</b></caption>
+		  
+		  <colgroup>
+		    <col bgcolor="yellow" span = "1">
+			<col bgcolor="grey" span = "2">
+			<col bgcolor="green" span = "3">
+			<col span = "4">
+		</colgroup>
         <!-- Fila de encabezados -->
          <tr bgcolor="#FFFFFF" align="center" valign="middle">
-      <th><font color="black">Columna 1</font></th>
-      <th><font color="black">Columna 2</font></th>
-      <th><font color="black">Columna 3</font></th>
-      <th><font color="black">Columna 4</font></th>
+         <th><b>Columna 1</b></th>
+         <th><b>Columna 2</b></th>
+         <th><b>Columna 3</b></th>
+         <th><b>Columna 4</b></th>
          </tr>
         
        <!-- Fila 1  -->
         
-        <tr align="center" valign="middle">
-      <td bgcolor="#FFFFFF"><b>F1</b></td>
-      <td></td>
-      <td></td>
-      <td align="right"></td>
-        
+       <tr align="center" valign="middle">
+       <td colspan="2">F1: C1 Y C2</td>
+       <td rowspan="2">F1 y F2:C3</td>
+       <td>f1 c4</td>
       
+	  
+	  <!-- Fila 2 -->
+	  <tr align="center" valign="middle">
+      <td>F1 C1</td>
+      <td>F2 C2</td>
+      <td>F2 C4</td>
+	  
+	  <!-- Fila 3 -->
+	  <tr align="center" valign="middle">
+      <td>F3 C1</td>
+      <td>F3 C2</td>
+      <td>F3 C3</td>
+	  <td>F3 C4</td>
+      
+      <!-- Fila 4 -->
+	  <tr align="center" valign="middle">
+      <td>F4 C1</td>
+      <td rowspan="3" colspan="2" >F4,F5 Y F6: C2 Y C3</td>
+	  <td>F4 C4</td>
+	  
+      <!-- Fila 5 -->
+	  <tr align="center" valign="middle">
+      <td>F5 C1</td>
+	  <td rowspan="2">F5 y F6:C4</td>
+	  
+	  <!-- Fila 6 -->
+	  <tr align="center" valign="middle">
+      <td>F6 C1</td>
+	  
+	  <!-- Fila total -->
+	  <tr align="center" valign="middle">
+      <td><b>Total 1</b></td>
+      <td><b>Total 2</b></td>
+      <td><b>Total 3</b></td>
+	  <td><b>Total 4</b></td>
+    
       
     </body>
   </html>
+  
